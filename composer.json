@@ -1,10 +1,10 @@
 {
-    "name": "script57/model-validation",
+    "name": "jobber/model-validation",
     "description": "",
     "authors": [
         {
-            "name": "Tamas Pap",
-            "email": "tamas@script57.com"
+            "name": "Levente Horvath",
+            "email": "levente.horvath@lateral-inc.com"
         }
     ],
     "require": {
