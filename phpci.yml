@@ -59,7 +59,7 @@ complete:
         format: zip
     shell:
         - "cd /var/www/jobber-dev-deploy-test"
-        - "unzip %project.title%-v.%build.id% -d /var/www/jobber-dev-deploy-test"
+        - "unzip Testproject1-v92.zip"
     copy_build:
         directory: /var/www/jobber-dev-deploy-test
         wipe: false
