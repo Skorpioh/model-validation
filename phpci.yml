@@ -53,7 +53,7 @@ complete:
     copy_build:
         directory: /var/www/jobber-dev-deploy-test
         wipe: false
-        # respect_ignore: true
+        respect_ignore: true
 
 
 #    mysql:
