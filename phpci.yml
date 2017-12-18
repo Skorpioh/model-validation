@@ -1,10 +1,15 @@
 build_settings:
     # clone_depth: 1 # depth of 1 is a shallow clone, remove this line to clone entire repo
     verbose: true
-    # prefer_symlink: false
+    prefer_symlink: false
     ignore:
         - "vendor"
         - "tests"
+        - "PHPCI/Command"
+        - "public/install.php"
+        - "PHPCI/Migrations"
+        - "PHPCI/Model/Base"
+        - "PHPCI/Languages"
 #    mysql:
 #        host: "localhost"
 #        user: "root"
