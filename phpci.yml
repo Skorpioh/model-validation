@@ -55,11 +55,11 @@ failure:
 complete:
     package_build:
         directory: /var/www/jobber-dev-deploy-test
-        filename: "%project.title% - %build.id%"
+        filename: "%project.title%-v.%build.id%"
         format: zip
     shell:
         - "cd /var/www/jobber-dev-deploy-test"
-        - "unzip %project.title% - %build.id%"
+        - "unzip %project.title%-v.%build.id% -d /var/www/jobber-dev-deploy-test"
     copy_build:
         directory: /var/www/jobber-dev-deploy-test
         wipe: false
