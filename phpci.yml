@@ -53,13 +53,12 @@ failure:
         default_mailto_address: levente.horvath@lateral-inc.com
 
 complete:
-    email:
-        default_mailto_address: levente.horvath@lateral-inc.com
     copy_build:
         directory: /var/www/jobber-dev-deploy-test
         wipe: false
         respect_ignore: true
-
+    email:
+        default_mailto_address: levente.horvath@lateral-inc.com
 
 #    mysql:
 #        host: "localhost"
