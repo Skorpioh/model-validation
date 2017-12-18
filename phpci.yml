@@ -53,6 +53,10 @@ failure:
         default_mailto_address: levente.horvath@lateral-inc.com
 
 complete:
+    package_build:
+        directory: /var/www/jobber-dev-deploy-test
+        filename: "%project.title% - %build.id%"
+        format: zip
     copy_build:
         directory: /var/www/jobber-dev-deploy-test
         wipe: false
