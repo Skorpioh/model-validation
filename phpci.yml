@@ -1,30 +1,34 @@
 build_settings:
-    clone_depth: 1 # depth of 1 is a shallow clone, remove this line to clone entire repo
+    # clone_depth: 1 # depth of 1 is a shallow clone, remove this line to clone entire repo
+    verbose: true
+    # prefer_symlink: false
     ignore:
         - "vendor"
         - "tests"
-    mysql:
-        host: "localhost"
-        user: "root"
-        pass: ""
+#    mysql:
+#        host: "localhost"
+#        user: "root"
+#        pass: ""
 
 setup:
-    mysql:
-        - "DROP DATABASE IF EXISTS test;"
-        - "CREATE DATABASE test;"
-        - "GRANT ALL PRIVILEGES ON test.* TO test@'localhost' IDENTIFIED BY 'test';"
+#    mysql:
+#        - "DROP DATABASE IF EXISTS test;"
+#        - "CREATE DATABASE test;"
+#        - "GRANT ALL PRIVILEGES ON test.* TO test@'localhost' IDENTIFIED BY 'test';"
     composer:
         action: "install"
 
 test:
-    php_unit:
-        config:
-            - "PHPUnit-all.xml"
-            - "PHPUnit-ubuntu-fix.xml"
-        directory:
-            - "tests/"
-        run_from: "phpunit/"
-        coverage: "tests/logs/coverage"
+#    php_unit:
+#        config:
+#            - "PHPUnit-all.xml"
+#            - "PHPUnit-ubuntu-fix.xml"
+#        directory:
+#            - "tests/"
+#        directory: "test/phpunit/"
+#        args: "--bootstrap 'test/phpunit/bootstrap.php' --configuration 'test/phpunit/phpunit.xml'"
+#        run_from: "phpunit/"
+#        coverage: "tests/logs/coverage"
     php_mess_detector:
         allow_failures: true
     php_code_sniffer:
@@ -35,8 +39,8 @@ test:
         task: "build"
 
 complete:
-    mysql:
-        host: "localhost"
-        user: "root"
-        pass: ""
-        - "DROP DATABASE IF EXISTS test;"
+#    mysql:
+#        host: "localhost"
+#        user: "root"
+#        pass: ""
+#        - "DROP DATABASE IF EXISTS test;"
