@@ -29,8 +29,8 @@ test:
 #        args: "--bootstrap 'test/phpunit/bootstrap.php' --configuration 'test/phpunit/phpunit.xml'"
 #        run_from: "phpunit/"
 #        coverage: "tests/logs/coverage"
-#    php_mess_detector:
-#        allow_failures: true
+    php_mess_detector:
+        allow_failures: true
 #    php_code_sniffer:
 #        standard: "PSR2"
 #    php_cpd:
@@ -48,6 +48,8 @@ complete:
         default_mailto_address: levente.horvath@lateral-inc.com
     copy_build:
         directory: /var/www/jobber-dev-deploy-test
+        wipe: false
+        respect_ignore: true
         
 #    mysql:
 #        host: "localhost"
