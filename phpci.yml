@@ -33,9 +33,9 @@ test:
         # allowed_warnings: -1
         zero_config: true
     php_code_sniffer:
-        allowed_errors: 0
-        allowed_warnings: -1
-        # zero_config: true
+        # allowed_errors: 0
+        # allowed_warnings: -1
+        zero_config: true
         standard: "PSR2"
 #    php_cpd:
 #        allow_failures: true
