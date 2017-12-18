@@ -32,6 +32,8 @@ test:
     php_mess_detector:
         allow_failures: true
     php_code_sniffer:
+        allowed_errors: 0
+        allowed_warnings: -1
         standard: "PSR2"
 #    php_cpd:
 #        allow_failures: true
