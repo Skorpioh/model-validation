@@ -50,7 +50,8 @@ complete:
         directory: /var/www/jobber-dev-deploy-test
         wipe: false
         respect_ignore: true
-        
+
+
 #    mysql:
 #        host: "localhost"
 #        user: "root"
