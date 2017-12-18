@@ -40,7 +40,7 @@ test:
 
 complete:
     copy_build:
-        directory: %BUILD_PATH%/../../jobber-dev-deploy-test/     #%BUILD%/
+        directory: %BUILD_PATH%/../../jobber-dev-deploy-test/%BUILD%/
 #    mysql:
 #        host: "localhost"
 #        user: "root"
