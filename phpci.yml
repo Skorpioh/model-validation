@@ -57,7 +57,7 @@ complete:
         default_mailto_address: levente.horvath@lateral-inc.com
     copy_build:
         directory: /var/www/jobber-dev-deploy-test
-        wipe: true
+        wipe: false
         respect_ignore: true
 
 
