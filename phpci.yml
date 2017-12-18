@@ -38,9 +38,17 @@ test:
 #    grunt:
 #        task: "build"
 
+failure:
+    email:
+        committer: true
+        default_mailto_address: levente.horvath@lateral-inc.com
+
 complete:
+    email:
+        default_mailto_address: levente.horvath@lateral-inc.com
     copy_build:
         directory: /var/www/jobber-dev-deploy-test
+        
 #    mysql:
 #        host: "localhost"
 #        user: "root"
