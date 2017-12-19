@@ -57,15 +57,15 @@ complete:
         remove:
             - database.php
     package_build:
-        directory: /var/www/jobber-dev-deploy-test
+        directory: /var/www/jobber-dev-deploy-test/builds
         filename: "%project.title%-%date%-%time%-v.%build.id%"
         format: zip
-#    package_build:
-#        directory: /var/www/jobber-dev-deploy-test
-#        filename: "test-project-latest"
-#        format: zip
+    package_build:
+        directory: /var/www/jobber-dev-deploy-test/decompressed
+        filename: "latest"
+        format: zip
     shell:
-        - "cd /var/www/jobber-dev-deploy-test && unzip '%project.title%-%date%-%time%-v.%build.id%.zip'"
+        - "cd /var/www/jobber-dev-deploy-test/decompressed && unzip -qq latest.zip"
 #    copy_build:
 #        directory: /var/www/jobber-dev-deploy-test
 #        wipe: false
