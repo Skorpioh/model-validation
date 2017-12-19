@@ -56,10 +56,10 @@ complete:
     clean_build:
         remove:
             - database.php
-    package_build:
-        directory: /var/www/jobber-dev-deploy-test/builds
-        filename: "%project.title%-%date%-%time%-v.%build.id%"
-        format: zip
+#    package_build:
+#        directory: /var/www/jobber-dev-deploy-test/builds
+#        filename: "%project.title%-%date%-%time%-v.%build.id%"
+#        format: zip
     package_build:
         directory: /var/www/jobber-dev-deploy-test/decompressed
         filename: "latest"
