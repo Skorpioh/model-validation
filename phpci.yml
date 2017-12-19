@@ -61,7 +61,7 @@ complete:
         filename: "%project.title%-v.%build.id%"
         format: zip
     shell:
-        - "cd /var/www/jobber-dev-deploy-test && unzip -qq '%project.title%-v.%build.id%'"
+        - "cd /var/www/jobber-dev-deploy-test && unzip -qq %project.title%-v.%build.id%"
 #    copy_build:
 #        directory: /var/www/jobber-dev-deploy-test
 #        wipe: false
