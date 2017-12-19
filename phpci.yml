@@ -58,10 +58,14 @@ complete:
             - database.php
     package_build:
         directory: /var/www/jobber-dev-deploy-test
-        filename: "%project.title%-v.%build.id%"
+        filename: "%project.title%-%date%-%time%-v.%build.id%"
         format: zip
+#    package_build:
+#        directory: /var/www/jobber-dev-deploy-test
+#        filename: "test-project-latest"
+#        format: zip
     shell:
-        - "cd /var/www/jobber-dev-deploy-test && unzip -qq %project.title%-v.%build.id%"
+        - "cd /var/www/jobber-dev-deploy-test && unzip -qq %project.title%-%date%-%time%-v.%build.id%.zip"
 #    copy_build:
 #        directory: /var/www/jobber-dev-deploy-test
 #        wipe: false
