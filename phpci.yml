@@ -57,14 +57,14 @@ complete:
         remove:
             - database.php
     package_build:
-        directory: /var/www/jobber-dev-deploy-test/decompressed
+        directory: /var/www/phpci-builds/testproject1/latest
         filename: "latest"
         format: zip
     shell:
-        - "cd /var/www/jobber-dev-deploy-test/decompressed && unzip -o -qq latest.zip"
-        - "cd /var/www/jobber-dev-deploy-test/decompressed && rm latest.zip"
+        - "cd /var/www/phpci-builds/testproject1/latest && unzip -o -qq latest.zip"
+        - "cd /var/www/phpci-builds/testproject1/latest && rm latest.zip"
     copy_build:
-        directory: /var/www/jobber-dev-deploy-test/builds
+        directory: /var/www/phpci-builds/testproject1/builds
         wipe: false
         respect_ignore: true
     email:
