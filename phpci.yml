@@ -64,7 +64,7 @@ complete:
         - "cd /var/www/phpci-builds/testproject1/latest && unzip -o -qq latest.zip"
         - "cd /var/www/phpci-builds/testproject1/latest && rm latest.zip"
     copy_build:
-        directory: /var/www/phpci-builds/testproject1/builds
+        directory: /var/www/phpci-builds/testproject1/archive
         wipe: false
         respect_ignore: true
     email:
