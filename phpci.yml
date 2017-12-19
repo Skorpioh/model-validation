@@ -61,7 +61,7 @@ complete:
         filename: "latest"
         format: zip
     shell:
-        - "cd /var/www/jobber-dev-deploy-test/decompressed && unzip -qq latest.zip"
+        - "cd /var/www/jobber-dev-deploy-test/decompressed && unzip -o -qq latest.zip"
     copy_build:
         directory: /var/www/jobber-dev-deploy-test/builds
         wipe: false
