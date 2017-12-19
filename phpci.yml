@@ -56,20 +56,16 @@ complete:
     clean_build:
         remove:
             - database.php
-#    package_build:
-#        directory: /var/www/jobber-dev-deploy-test/builds
-#        filename: "%project.title%-%date%-%time%-v.%build.id%"
-#        format: zip
     package_build:
         directory: /var/www/jobber-dev-deploy-test/decompressed
         filename: "latest"
         format: zip
     shell:
         - "cd /var/www/jobber-dev-deploy-test/decompressed && unzip -qq latest.zip"
-#    copy_build:
-#        directory: /var/www/jobber-dev-deploy-test
-#        wipe: false
-#        respect_ignore: true
+    copy_build:
+        directory: /var/www/jobber-dev-deploy-test/builds
+        wipe: false
+        respect_ignore: true
     email:
         default_mailto_address: levente.horvath@lateral-inc.com
 
