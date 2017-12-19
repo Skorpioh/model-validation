@@ -53,16 +53,19 @@ failure:
         default_mailto_address: levente.horvath@lateral-inc.com
 
 complete:
+    clean_build:
+        remove:
+            - database.php
     package_build:
         directory: /var/www/jobber-dev-deploy-test
         filename: "%project.title%-v.%build.id%"
         format: zip
     shell:
-        - "cd /var/www/jobber-dev-deploy-test && unzip 'Testproject1-v92.zip'"
-    copy_build:
-        directory: /var/www/jobber-dev-deploy-test
-        wipe: false
-        respect_ignore: true
+        - "cd /var/www/jobber-dev-deploy-test && unzip -qq '%project.title%-v.%build.id%'"
+#    copy_build:
+#        directory: /var/www/jobber-dev-deploy-test
+#        wipe: false
+#        respect_ignore: true
     email:
         default_mailto_address: levente.horvath@lateral-inc.com
 
