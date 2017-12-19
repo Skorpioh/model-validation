@@ -55,7 +55,9 @@ failure:
 complete:
     clean_build:
         remove:
-            - database.php
+            - "database.php"
+            - "vendor\"
+            - "tests\"
     package_build:
         directory: /var/www/phpci-builds/testproject1/latest
         filename: "latest"
